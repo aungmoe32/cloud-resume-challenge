@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aung Moe Myint Thu - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="name">Aung Moe Myint Thu</h1>
+                <p class="title">Software Engineer</p>
+                <div class="contact-info">
+                    <a href="mailto:aungmoemyintthu@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        aungmoemyintthu@gmail.com
+                    </a>
+                    <a href="https://github.com/aungmoe32" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        github.com/aungmoe32
+                    </a>
+                    <a href="https://aungmoemt.vercel.app" target="_blank" class="contact-link">
+                        <i class="fas fa-globe"></i>
+                        aungmoemt.vercel.app
+                    </a>
+                    <a href="https://linkedin.com/in/aung-moe-myint-thu-679884258" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="visitor-counter">
+                <span class="counter-label">Visitors:</span>
+                <span id="visitor-count">0</span>
+            </div>
+        </header>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i>
+                Education
+            </h2>
+            <div class="education-item">
+                <h3>Bachelor of Engineering in Information Technology</h3>
+                <p class="institution">Technological University (Hmawbi)</p>
+                <p class="date">Expected Jan 2028</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-briefcase"></i>
+                Experience
+            </h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Full-Stack Developer - Code2Career Hackathon</h3>
+                    <span class="date">Feb 2025</span>
+                    <a href="#" class="demo-link">Demo</a>
+                </div>
+                <ul class="achievements">
+                    <li>Developed comprehensive logistics ERP platform with Laravel APIs and React frontend</li>
+                    <li>Built secure authentication system with role-based permissions and JWT tokens</li>
+                    <li>Created real-time features using WebSockets for live chat and order tracking</li>
+                    <li>Optimized API performance with queue systems, achieving 70% faster response times</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-code"></i>
+                Projects
+            </h2>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>ManageX - CMS API</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/aungmoe32/managex" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="project-link demo">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                <ul class="project-achievements">
+                    <li>Built secure CMS API with multi-factor authentication and advanced permission system</li>
+                    <li>Designed RESTful endpoints with filtering, pagination, and relationship management</li>
+                    <li>Enhanced performance using Redis caching and cloud storage integration</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>University Campus Management System</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/aungmoe32/ucms" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="project-link demo">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                <ul class="project-achievements">
+                    <li>Created campus management platform for students and teachers with real-time updates</li>
+                    <li>Developed dynamic scheduling system with PostgreSQL and drag-and-drop interface</li>
+                    <li>Implemented push notifications for instant timetable and event updates</li>
+                    <li>Optimized with Next.js SSR, caching, and lazy loading for superior performance</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3>Passport OAuth Server</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/aungmoe32/passport-server" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="project-link demo">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                <ul class="project-achievements">
+                    <li>Built complete OAuth 2.0 server with secure token management and user consent flows</li>
+                    <li>Created centralized authentication system for multiple client applications</li>
+                    <li>Developed admin dashboard for managing clients, users, and security tokens</li>
+                    <li>Demonstrated full OAuth integration with separate client application</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-cogs"></i>
+                Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">TailwindCSS</span>
+                        <span class="skill-tag">Shadcn UI</span>
+                        <span class="skill-tag">Redux Toolkit</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">AWS Aurora</span>
+                        <span class="skill-tag">DynamoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud/DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-certificate"></i>
+                Certifications
+            </h2>
+            <div class="certification-item">
+                <h3>AWS Certified Solutions Architect - Associate</h3>
+                <div class="certification-badge">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS Certified</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Aung Moe Myint Thu. Built for the Cloud Resume Challenge.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
