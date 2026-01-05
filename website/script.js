@@ -70,7 +70,7 @@ class VisitorCounter {
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
   const apiEndpoint =
-    "https://yvswltjo4i24p5mhzz22euvep40opgmu.lambda-url.ap-southeast-1.on.aws/"; // Set to your API endpoint in production
+    "https://nsw43mf8pe.execute-api.ap-southeast-1.amazonaws.com/visitors"; // Set to your API endpoint in production
   // Core functionality
   const visitorCounter = new VisitorCounter(apiEndpoint);
 });
