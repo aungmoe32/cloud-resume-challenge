@@ -1,0 +1,65 @@
+name: Terraform CI/CD
+
+on:
+  push:
+    branches:
+      - main # Triggers on pushes to the main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        # Use 'working-directory' to run commands inside the new folder
+        working-directory: ./infra/lambda
+        run: |
+          python -m pip install --upgrade pip
+          # Install pytest and other dependencies from requirements.txt (if any)
+          pip install pytest
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Test with pytest
+        working-directory: ./infra/lambda
+        run: |
+          pytest
+
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Validate
+        run: terraform validate
+
+      - name: Terraform Plan
+        # Generates a plan file for review before applying
+        run: terraform plan -out=tfplan
+
+      - name: Terraform Apply
+        # Applies the changes automatically if plan succeeds
+        run: terraform apply -auto-approve tfplan
