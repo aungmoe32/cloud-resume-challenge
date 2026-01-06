@@ -1,6 +1,13 @@
 resource "aws_apigatewayv2_api" "http_api" {
   name          = "cloudresume-http-api"
   protocol_type = "HTTP"
+
+  cors_configuration {
+    allow_origins = ["https://aungmoemt.site"]
+    allow_methods = ["GET"]
+    allow_headers = []
+    max_age       = 300 # Cache preflight response for 5 minutes
+  }
 }
 resource "aws_apigatewayv2_integration" "lambda" {
   api_id = aws_apigatewayv2_api.http_api.id

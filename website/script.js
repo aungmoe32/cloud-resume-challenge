@@ -1,5 +1,3 @@
-// Cloud Resume Challenge - Simple Visitor Counter
-
 // Visitor counter functionality
 class VisitorCounter {
   constructor(apiEndpoint = null) {
@@ -70,7 +68,6 @@ class VisitorCounter {
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
   const apiEndpoint =
-    "https://nsw43mf8pe.execute-api.ap-southeast-1.amazonaws.com/visitors"; // Set to your API endpoint in production
-  // Core functionality
+    "https://xw6fumewed.execute-api.ap-southeast-1.amazonaws.com/visitors"; // Set to your API endpoint in production
   const visitorCounter = new VisitorCounter(apiEndpoint);
 });
