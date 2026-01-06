@@ -1,7 +1,7 @@
 import boto3
 
 def get_table():
-    dynamodb = boto3.resource("dynamodb")
+    dynamodb = boto3.resource("dynamodb", region_name="ap-southeast-1")
     return dynamodb.Table("resume-visitors")
 
 def handler(event, context):
