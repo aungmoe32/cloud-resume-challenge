@@ -1,0 +1,45 @@
+# Python
+# Compiled source
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.eggs/
+PKG-INFO
+
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+
+# IDE-specific files (e.g., PyCharm, VS Code)
+.idea/
+.vscode/
+*.swp
+
+
+# Distribution / build
+dist/
+build/
+*.whl
+
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+.tox/
+
+
+# Logs and databases
+*.log
+*.sqlite3
+
+
+# Environment variables
+.env
+
