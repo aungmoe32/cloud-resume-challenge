@@ -1,60 +1,58 @@
-# Cloud Resume Challenge - Aung Moe Myint Thu
+# AWS Cloud Resume Challenge
 
-A responsive resume website built for the [Cloud Resume Challenge](https://cloudresumechallenge.dev/).
+A serverless resume website with visitor counter built on AWS. This project demonstrates cloud architecture, Infrastructure as Code, and CI/CD practices.
 
-## 🌟 Features
+![Cloud Resume Architecture](images/cloud-resume-architecture.png)
 
-- **Responsive Design**: Works on all devices
-- **Visitor Counter**: Real-time tracking for Cloud Resume Challenge
-- **Clean UI**: Professional design with modern styling
-- **AWS Ready**: Prepared for cloud deployment
+## Architecture
 
-## 📁 Files
+- **Frontend**: Static website on S3 with CloudFront
+- **Backend**: Lambda function with DynamoDB  
+- **API**: API Gateway for visitor counter
+- **Infrastructure**: Terraform for provisioning
+- **CI/CD**: GitHub Actions for deployment
 
-- `index.html` - Main website structure
-- `styles.css` - Responsive styling
-- `script.js` - Simple visitor counter
-- `README.md` - Documentation
+## Project Structure
 
-## 🚀 Local Development
-
-1. Open `index.html` in your browser
-2. Or use VS Code Live Server extension
-
-## 🔧 Visitor Counter
-
-### Development Mode
-Uses localStorage - increments once per hour
-
-### Production Mode
-```javascript
-// Set your API Gateway endpoint
-visitorCounter.setAPIEndpoint('https://your-api-url.amazonaws.com/prod/visitor-count');
+```
+├── blog/                    # Project documentation
+│   ├── blog-part-1.md      # Part 1: Foundation setup
+│   ├── blog-part-2.md      # Part 2: Backend implementation  
+│   ├── blog-part-3.md      # Part 3: CI/CD deployment
+│   └── whatIdo.txt         # Implementation checklist
+├── infra/                  # Terraform code
+│   ├── lambda/             # Python Lambda function
+│   └── *.tf               # Infrastructure definitions
+└── website/                # Static website files
 ```
 
-## 📱 Responsive Design
+## Features
 
-- Desktop: 1200px+
-- Tablet: 768-1199px  
-- Mobile: Below 768px
+- Responsive resume website
+- Real-time visitor counter
+- HTTPS with custom domain
+- Automated testing and deployment
+- Serverless architecture
 
-## 🎯 Cloud Resume Challenge Requirements
+## Deployment
 
-✅ AWS Certification  
-✅ HTML/CSS Website  
-✅ Static S3 Hosting  
-✅ CloudFront HTTPS  
-✅ JavaScript Counter  
-✅ API Gateway + Lambda  
-✅ DynamoDB Storage  
+The project uses GitHub Actions for CI/CD:
 
-## 📝 Contact
+- **Backend**: Deploys infrastructure on `infra/**` changes
+- **Frontend**: Syncs website on `website/**` changes
+
+## Blog
+
+Read the complete implementation guide: [AWS Cloud Resume Challenge](https://aungmoemt.vercel.app/blog/aws-cloud-resume-challenge)
+
+The blog folder contains detailed documentation:
+- Part 1: Setting up foundation (HTML, CSS, S3, CloudFront, HTTPS)
+- Part 2: Backend implementation (Lambda, DynamoDB, API Gateway)
+- Part 3: CI/CD pipeline and deployment automation
+
+## Contact
 
 **Aung Moe Myint Thu**
 - Email: aungmoemyintthu@gmail.com
-- GitHub: [github.com/aungmoe32](https://github.com/aungmoe32)
-- LinkedIn: [linkedin.com/in/aung-moe-myint-thu-679884258](https://linkedin.com/in/aung-moe-myint-thu-679884258)
-
----
-
-**Built for the Cloud Resume Challenge 2025**
+- GitHub: [aungmoe32](https://github.com/aungmoe32)
+- Website: [aungmoemt.vercel.app](https://aungmoemt.vercel.app)
