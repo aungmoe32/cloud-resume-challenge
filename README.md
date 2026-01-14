@@ -1,13 +1,13 @@
 # AWS Cloud Resume Challenge
 
-A serverless resume website with visitor counter built on AWS. This project demonstrates cloud architecture, Infrastructure as Code, and CI/CD practices.
+A serverless resume website with visitor counter built on AWS. This project demonstrates cloud architecture, Infrastructure as Code, and CI/CD practices. [aungmoemt.site](https://aungmoemt.site)
 
 ![Cloud Resume Architecture](images/cloud-resume-architecture.png)
 
 ## Architecture
 
 - **Frontend**: Static website on S3 with CloudFront
-- **Backend**: Lambda function with DynamoDB  
+- **Backend**: Lambda function with DynamoDB
 - **API**: API Gateway for visitor counter
 - **Infrastructure**: Terraform for provisioning
 - **CI/CD**: GitHub Actions for deployment
@@ -15,11 +15,6 @@ A serverless resume website with visitor counter built on AWS. This project demo
 ## Project Structure
 
 ```
-├── blog/                    # Project documentation
-│   ├── blog-part-1.md      # Part 1: Foundation setup
-│   ├── blog-part-2.md      # Part 2: Backend implementation  
-│   ├── blog-part-3.md      # Part 3: CI/CD deployment
-│   └── whatIdo.txt         # Implementation checklist
 ├── infra/                  # Terraform code
 │   ├── lambda/             # Python Lambda function
 │   └── *.tf               # Infrastructure definitions
@@ -44,15 +39,3 @@ The project uses GitHub Actions for CI/CD:
 ## Blog
 
 Read the complete implementation guide: [AWS Cloud Resume Challenge](https://aungmoemt.vercel.app/blog/aws-cloud-resume-challenge)
-
-The blog folder contains detailed documentation:
-- Part 1: Setting up foundation (HTML, CSS, S3, CloudFront, HTTPS)
-- Part 2: Backend implementation (Lambda, DynamoDB, API Gateway)
-- Part 3: CI/CD pipeline and deployment automation
-
-## Contact
-
-**Aung Moe Myint Thu**
-- Email: aungmoemyintthu@gmail.com
-- GitHub: [aungmoe32](https://github.com/aungmoe32)
-- Website: [aungmoemt.vercel.app](https://aungmoemt.vercel.app)
