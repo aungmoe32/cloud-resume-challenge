@@ -4,6 +4,10 @@ A serverless resume website with visitor counter built on AWS. This project demo
 
 ![Cloud Resume Architecture](images/cloud-resume-architecture.png)
 
+## Blog
+
+Read the complete implementation guide: [AWS Cloud Resume Challenge](https://aungmoemt.vercel.app/blog/aws-cloud-resume-challenge)
+
 ## Architecture
 
 - **Frontend**: Static website on S3 with CloudFront
@@ -35,7 +39,3 @@ The project uses GitHub Actions for CI/CD:
 
 - **Backend**: Deploys infrastructure on `infra/**` changes
 - **Frontend**: Syncs website on `website/**` changes
-
-## Blog
-
-Read the complete implementation guide: [AWS Cloud Resume Challenge](https://aungmoemt.vercel.app/blog/aws-cloud-resume-challenge)
